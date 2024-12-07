@@ -4,19 +4,20 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { GoogleTagmanager, GoogleTagmanagerNoscript } from '@digi4care/astro-google-tagmanager';
+const gtmId = 'GTM-N85258PM';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<!-- Google Tag Manager -->
-		<GoogleTagmanager id={'GTM-N85258PM'} />
+		<GoogleTagmanager id={gtmId} />
 		
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		 <!-- No Script fallback for Google Tag Manager -->
-		 <GoogleTagmanagerNoscript id={'GTM-N85258PM'} />
+		 <GoogleTagmanagerNoscript id={gtmId} />
 		<Header />
 		<main>
 			<h1>Saadat Muzaffar</h1>
