@@ -17,7 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'https://your-vercel-url/api/proxy?url=' + encodeURIComponent('https://www.googletagmanager.com/gtm.js?id=' + i + dl);
 			f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-N85258PM');
+			})(window,document,'script','dataLayer','{gtmId}');
 		  </script>
 		  <!-- End Google Tag Manager -->
 		
@@ -25,7 +25,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		 <!-- Google Tag Manager (noscript) -->
-		 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM-N85258PM}"
+		 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtmId}"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<!-- End Google Tag Manager (noscript) -->
 		<Header /> 
