@@ -10,15 +10,24 @@ const gtmId = 'GTM-N85258PM';
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Google Tag Manager -->
-		<GoogleTagmanager id={gtmId} />
+		 <!-- Google Tag Manager -->
+		 <script type="text/partytown">
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+			new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','{gtmId}');
+		  </script>
+		  <!-- End Google Tag Manager -->
 		
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		 <!-- No Script fallback for Google Tag Manager -->
-		 <GoogleTagmanagerNoscript id={gtmId} />
-		<Header />
+		 <!-- Google Tag Manager (noscript) -->
+		 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtmId}"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
+		<Header /> 
 		<main>
 			<h1>Saadat Muzaffar</h1>
 			<p>
