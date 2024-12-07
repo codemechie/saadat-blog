@@ -14,7 +14,7 @@
     "rewrites": [
     {
       "source": "/proxytown/gtm",
-      "destination": "https://www.googletagmanager.com/gtag/js"
+      "destination": "https://www.googletagmanager.com/gtm.js?id=GTM-N85258PM"
     },
     {
       "source": "/proxytown/ga",
