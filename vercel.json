@@ -16,12 +16,11 @@
       "source": "/api/gtm",
       "destination": "https://www.googletagmanager.com/gtm.js?id=GTM-N85258PM"
     },
-    {
-      "rewrites": [
-        {
-          "source": "/proxytown/gtm",
-          "destination": "https://www.googletagmanager.com/gtag/js"
-        },
+    
+    {"source": "/proxytown/gtm",
+      "destination": "https://www.googletagmanager.com/gtag/js"
+    },
+    
     {
       "source": "/proxytown/ga",
       "destination": "https://www.google-analytics.com/analytics.js"
